@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8221118819678676724
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3500263593857232202}
+  - component: {fileID: 5478825288250876833}
+  m_Layer: 0
+  m_Name: MonitoringSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3500263593857232202
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8221118819678676724}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5478825288250876833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8221118819678676724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01dc15768e468d41bf6b9b5c5c16b80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _registeredMonitors:
+  - RegisteredForType: 0
+    MonitoringIssues: []
+    RunningLoopRange: 0
+  - RegisteredForType: 1
+    MonitoringIssues:
+    - IssueType: 0
+      PriorityLayer: 0
+      InterruptNextLayers: 1
+    - IssueType: 2
+      PriorityLayer: 0
+      InterruptNextLayers: 1
+    - IssueType: 1
+      PriorityLayer: 1
+      InterruptNextLayers: 0
+    - IssueType: 3
+      PriorityLayer: 2
+      InterruptNextLayers: 1
+    - IssueType: 4
+      PriorityLayer: 3
+      InterruptNextLayers: 1
+    - IssueType: 5
+      PriorityLayer: 4
+      InterruptNextLayers: 1
+    RunningLoopRange: 5
+  - RegisteredForType: 2
+    MonitoringIssues:
+    - IssueType: 0
+      PriorityLayer: 0
+      InterruptNextLayers: 1
+    - IssueType: 2
+      PriorityLayer: 0
+      InterruptNextLayers: 1
+    - IssueType: 1
+      PriorityLayer: 1
+      InterruptNextLayers: 0
+    - IssueType: 3
+      PriorityLayer: 2
+      InterruptNextLayers: 1
+    - IssueType: 4
+      PriorityLayer: 3
+      InterruptNextLayers: 1
+    - IssueType: 5
+      PriorityLayer: 4
+      InterruptNextLayers: 1
+    - IssueType: 6
+      PriorityLayer: 5
+      InterruptNextLayers: 1
+    RunningLoopRange: 5
+  _issuesImpactsMapping:
+  - ReferToIssue: 0
+    ImpactType: 2
+  - ReferToIssue: 2
+    ImpactType: 2
+  - ReferToIssue: 1
+    ImpactType: 0
+  - ReferToIssue: 3
+    ImpactType: 2
+  - ReferToIssue: 4
+    ImpactType: 2
+  - ReferToIssue: 5
+    ImpactType: 1
+  - ReferToIssue: 6
+    ImpactType: 0
